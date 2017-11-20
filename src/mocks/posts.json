@@ -1,0 +1,12 @@
+{
+  "count": 1,
+  "posts": [
+    {
+      "slug": "infinite-data-sets-and-responsive-web-design",
+      "title": "Infinite Data Sets and Responsive Web Design",
+      "thumb": "https://openclipart.org/download/266611/3D-Infinity-Symbol-Variation-4.svg",
+      "summary": "Thinking of responsive web design in the same way that we think of infinite data sets results in mobile first responsive web design.",
+      "body": "Thinking of responsive web design in the same way that we think of infinite data sets results in mobile first responsive web design."
+    }
+  ]
+}

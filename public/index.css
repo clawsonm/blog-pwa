@@ -1,0 +1,140 @@
+a {
+  color: #13A4F2;
+}
+
+.content a:hover, .footer a:hover {
+  color: #13A4F2;
+  text-decoration: none;
+  border-bottom: 1px dotted #13A4F2;
+  padding-bottom: 2px;
+}
+
+.content p {
+  font-weight: 300;
+}
+
+.content code {
+  background-color: #282c34;
+  color: #abb2bf;
+}
+
+.navbar.bg-light {
+  background-color: #FFF !important;
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  letter-spacing: -0.3rem;
+  font-kerning: normal;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #222;
+  padding-bottom: 2px;
+  border-bottom: 1px solid white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .active>.nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active:hover,
+.navbar-light .navbar-nav .nav-link.show:hover,
+.navbar-light .navbar-nav .show>.nav-link:hover {
+  color: #13A4F2;
+  border-bottom: 1px dotted #13A4F2;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+  font-weight: bold;
+  color: #222;
+  padding-bottom: 2px;
+}
+
+@media (min-width: 576px) {
+  .navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: .75rem;
+    padding-left: .75rem;
+  }
+}
+
+.jumbotron.bg-dark {
+  background-color: #222 !important;
+}
+
+.jumbotron h1, .jumbotron .lead {
+  color: #fff;
+}
+
+.jumbotron a:hover {
+  color: #13A4F2;
+  text-decoration: none;
+  border-bottom: 1px dotted #13A4F2;
+  padding-bottom: 2px;
+}
+
+.loader {
+  position: relative;
+  width: 3rem;
+  height: 4rem;
+  border: 0.2rem solid transparent;
+  border-top-color: #13A4F2;
+  border-bottom-color: #222;
+  border-radius: 50%;
+  -webkit-animation: spinner 2s linear infinite;
+  animation: spinner 2s linear infinite;
+}
+.loader:before {
+  content: "";
+  position: absolute;
+  top: 0.2rem;
+  left: 0.2rem;
+  right: 0.2rem;
+  bottom: 0.2rem;
+  border: 0.2rem solid transparent;
+  border-top-color: #13A4F2;
+  border-bottom-color: #222;
+  border-radius: 50%;
+  -webkit-animation: spinner 3s linear infinite;
+  animation: spinner 3s linear infinite;
+}
+.loader:after {
+  content: "";
+  position: absolute;
+  top: 0.6rem;
+  left: 0.6rem;
+  right: 0.6rem;
+  bottom: 0.6rem;
+  border: 0.2rem solid transparent;
+  border-top-color: #13A4F2;
+  border-bottom-color: #222;
+  border-radius: 50%;
+  -webkit-animation: spinner 1.5s linear infinite;
+  animation: spinner 1.5s linear infinite;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
