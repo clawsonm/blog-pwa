@@ -1,7 +1,9 @@
 {
   "name": "blog-pwa",
   "version": "0.1.0",
-  "private": true,
+  "description": "My blog as a React PWA",
+  "author": "Michael Clawson",
+  "license": "ISC",
   "dependencies": {
     "axios": "^0.17.0",
     "history": "^4.7.2",
