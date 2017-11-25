@@ -3,6 +3,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { get_post } from '../actions';
 import Loading from './Loading';
+import NotFound from './NotFound';
 import CommentList from './CommentList';
 import { withRouter } from 'react-router-dom';
 import MarkdownIt from 'markdown-it';
@@ -59,7 +60,11 @@ class Post extends Component {
           </div>
         </div>
       );
-
+    }
+    if (this.props.post === false) {
+      content = (
+        <NotFound />
+      );
     }
     return (
         <div className="container content">

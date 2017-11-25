@@ -12,8 +12,13 @@ export const get_posts = () => async dispatch => {
 
 export const get_post = (slug) => async dispatch => {
 	dispatch({ type: CLEAR_POST });
-	const res = await axios.get(`${BASE_PATH}/posts/${slug}`);
-	dispatch({ type: GET_POST, payload: res.data });
+	try {
+		const res = await axios.get(`${BASE_PATH}/posts/${slug}`);
+		dispatch({ type: GET_POST, payload: res.data });
+	} catch (e) {
+		dispatch({ type: GET_POST, payload: false });
+		return;
+	}
 	const res2 = await axios.get(`${BASE_PATH}/posts/${slug}/comments`);
 	dispatch({ type: GET_COMMENTS, payload: res2.data });
 }

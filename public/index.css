@@ -74,7 +74,7 @@ a {
   padding-bottom: 2px;
 }
 
-.loader {
+.loader, .notfound {
   position: relative;
   width: 3rem;
   height: 4rem;
@@ -82,10 +82,15 @@ a {
   border-top-color: #13A4F2;
   border-bottom-color: #222;
   border-radius: 50%;
+}
+.loader {
   -webkit-animation: spinner 2s linear infinite;
   animation: spinner 2s linear infinite;
 }
-.loader:before {
+.notfound {
+  transform: rotate(90deg);
+}
+.loader:before, .notfound:before {
   content: "";
   position: absolute;
   top: 0.2rem;
@@ -96,10 +101,15 @@ a {
   border-top-color: #13A4F2;
   border-bottom-color: #222;
   border-radius: 50%;
+}
+.loader:before {
   -webkit-animation: spinner 3s linear infinite;
   animation: spinner 3s linear infinite;
 }
-.loader:after {
+.notfound:before {
+  transform: rotate(-90deg);
+}
+.loader:after, .notfound:after {
   content: "";
   position: absolute;
   top: 0.6rem;
@@ -110,8 +120,34 @@ a {
   border-top-color: #13A4F2;
   border-bottom-color: #222;
   border-radius: 50%;
+}
+.loader:after {
   -webkit-animation: spinner 1.5s linear infinite;
   animation: spinner 1.5s linear infinite;
+}
+.notfound:after {
+  transform: rotate(180deg);
+}
+
+.notfound-X, .notfound-X:before, .notfound-X:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+.notfound-X:before, .notfound-X:after {
+  border-top: .2rem solid red;
+  position: absolute;
+  height: .1rem;
+  top: 46%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.notfound-X:before {
+  transform: rotate(-45deg);
+}
+.notfound-X:after {
+  transform: rotate(45deg);
 }
 
 @-webkit-keyframes spinner {
