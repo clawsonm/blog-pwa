@@ -7,8 +7,8 @@ import NotFound from './NotFound';
 import CommentList from './CommentList';
 import { withRouter } from 'react-router-dom';
 import MarkdownIt from 'markdown-it';
-import MarkdownItAttrs from 'markdown-it-attrs';
-import MarkdownItHljs from 'markdown-it-highlightjs';
+import MarkdownItAttrs from '../lib/markdown-it-attrs';
+import MarkdownItHljs from '../lib/markdown-it-highlightjs';
 
 class Post extends Component {
 

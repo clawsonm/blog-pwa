@@ -1,6 +1,6 @@
 import React from 'react';
 import MarkdownIt from 'markdown-it';
-import MarkdownItHljs from 'markdown-it-highlightjs';
+import MarkdownItHljs from '../lib/markdown-it-highlightjs';
 
 const CommentList = ({ comments }) => {
 
